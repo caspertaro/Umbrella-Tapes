@@ -4,17 +4,30 @@
   <title>Umbrella Tapes</title>
   <link rel="stylesheet" type="text/css" href="stylesheet1.css">
   <style type="text/css">
-    body {
-      background-color: rgb(140, 254, 210);
-      margin: 0;
-    }
 
-    ul {
+body {
+  background-color: rgb(255, 170, 210);
+  margin: 0;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #ff6ddd;
+  background-color: #fffd94;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -28,7 +41,7 @@ li a {
 }
 
 li a.active {
-  background-color: rgb(253, 249, 143);
+  background-color: rgb(143, 76, 13);
   color: rgb(0, 0, 0);
 }
 
@@ -53,10 +66,9 @@ li a:hover:not(.active) {
 
 
   <ul>
-    <li><a class="active" href="#home">Umbrella Tapes</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a class="active" style="font-family: Arial, Helvetica, sans-serif" href="#home">Umbrella Tapes</a></li>
+    <li><a style="font-family:Arial, Helvetica, sans-serif" href="#news">News</a></li>
+    <li><a style="font-family:Arial, Helvetica, sans-serif" href="#contact">Contact</a></li>
   </ul>
   
   <div style="margin-left:25%;padding:1px 16px;height:1000px;">
@@ -66,6 +78,12 @@ li a:hover:not(.active) {
     <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
     <p>Some text..</p>
     <p>Some text..</p>
+
+    <!-- Så er det faktisk herunder at content skal addes på siden. Så placeres ting på siden med tekst,
+    separat fra navigation bar'en til venstre, men på denne side html, dvs 'index' siden, som hedder Umbrella Tapes her. -->
+    <img src="goblin.png" style="width: 500px">
+
+
   </div>
 
 
