@@ -22,11 +22,9 @@ video {
 
 
 
-
+/* static glow below */
 #PlantGame {
-  /* static glow below */
-  box-shadow: 
-  0 0 100px 50px rgb(238, 255, 0);
+  box-shadow: 1px 1px 100px 50px rgba(0,255,106,1);
 }
 
 #EUROPA {
