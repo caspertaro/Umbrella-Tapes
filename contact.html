@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Umbrella Tapes</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet1.css">
   <style type="text/css">
 
@@ -56,6 +57,12 @@ li a:hover:not(.active) {
 }
 
 
+model-viewer {
+  width: 2000px;
+  height: 2000px;
+  margin: 0 auto;
+}
+
   </style>
 </head>
 
@@ -97,7 +104,14 @@ li a:hover:not(.active) {
       <br><br><br>
     </div>
 
+    <div class="demo" style="overflow-x: hidden;">
+      <model-viewer camera-controls touch-action="pan-y" src="RoomsTape.glb" ar alt="A 3D transparency test" style="background-color: unset;"></model-viewer>
+    </div>
+
   </div>
+
+  
+
 
 
 
