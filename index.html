@@ -65,6 +65,7 @@ li a:hover:not(.active) {
 }
 
 
+/* below is navigation menu css stuff */
 .logoandlogohand {
   margin-top: 0%;
   margin-left: 5%;
@@ -79,11 +80,34 @@ li a:hover:not(.active) {
   left: 100px;
 }
 
-
 .Logo {
   position: absolute;
   top: 50px;
   left: 300px;
+}
+
+/* below is Tape object stuff*/
+.Tape {
+  background-color: aqua;
+  position: relative;
+  width: 60%;
+  left: 15%;
+
+}
+
+.TapeLeft {
+  background-color: chocolate;
+  position: absolute;
+  left: 0%;
+  width: 50%;
+}
+
+
+.Model{
+  background-color: rgb(30, 111, 210);
+  position: absolute;
+  left: 50%;
+  width: 50%;
 }
 
 
@@ -127,13 +151,34 @@ li a:hover:not(.active) {
 
     <!-- brug nedenstående div som template til content-->
 
-    
+    <div class="Tape">
+      <br><br><br><br><br>
+      <div class="TapeLeft" align="center">
+        <iframe id="PlantGame" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=2031851837/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/track/plant-game">Plant Game by Needles</a></iframe>
+        <p style="color: white; font-size: xx-small;">Needles soundtrack for video game 'Plant Game'<br>May 2022<br>Much more text can be inserted here below the albume, perhaps some cool words or something similar I dunno just freestylin' here ya know it's all good bro</p>
+      </div>
+
+      <div class="Model" style="overflow-x: hidden;">
+        <model-viewer camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/RoomsTape.glb" ar ios-src="3Dmodels/RoomsTape.usdz" alt="A 3D transparency test" style="background-color: unset;"></model-viewer>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <div align="center"> <!-- iframe id i nedenstående bruger jeg til at sætte CSS per object med samme id-->
       <iframe id="PlantGame" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=2031851837/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/track/plant-game">Plant Game by Needles</a></iframe>
       <p style="color: white; font-size: xx-small;">Needles soundtrack for video game 'Plant Game'<br>May 2022</p>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
     </div>
-    
+
 
     <div align="center">
       <iframe id="EUROPA" style="border: 0; width: 400px; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/track=4154398565/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/" seamless><a href="https://christianhr.bandcamp.com/track/europa-d-r-knag">EUROPA DØR KNAG by Christian HR</a></iframe>
