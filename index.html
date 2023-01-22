@@ -2,25 +2,13 @@
 <html>
 <head>
   <title>Umbrella Tapes</title>
+  <!-- The line below imports the model viewer stuff, this must be here-->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet1.css">
   <style type="text/css">
 
 body {
-
-  
-  background-color:#CCC481;
- 
-
-  /*
-  background: repeating-linear-gradient(
-    135deg,
-    #D50000,
-    #C51162 40px,
-    #6200EA 40px,
-    #AA00FF 80px
-  ); */
-
+background-color:#CCC481;
 }
 
 h2 {
@@ -35,6 +23,9 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/*below is nav menu stuff*/
 .menulist {
   list-style-type: none;
   margin: 0px;
@@ -45,7 +36,7 @@ p {
   position: fixed;
   top: 10px;
   height: 110px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 li a {
@@ -65,19 +56,11 @@ li a:hover:not(.active) {
   color: white;
 }
 
-/* .colorbox{
-  background-color: #407899;
-  width: 120px;
-  height: 110px;
-  position: fixed;
-  left: 90%;
-  top: 10px;
-} */
 
 
 
 
-/* below is navigation menu css stuff */
+/* below is logo pictures css stuff */
 .logoandlogohand {
   position: relative;
   top: 2px;
@@ -180,19 +163,21 @@ li a:hover:not(.active) {
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
    
-
+<!-- Bandcamp and other embedded things should be no wider than 300px, to fit mobile viewport-->
 <div class="container">
   <div class="item1">
     <div class="music">
-      <iframe id="PlantGame" style="border: 0; width: 400px; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/track=2031851837/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/track/plant-game">Plant Game by Needles</a></iframe>
+      <iframe id="PlantGame" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/track=2031851837/size=large/bgcol=ffffff/linkcol=2ebd35/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/track/plant-game">Plant Game by Needles</a></iframe>
     </div>
     <div class="text">
       <p style="color: white; font-size: xx-small;">Needles soundtrack for video game 'Plant Game'</p>
       <p style="color: white; font-size: xx-small; align-items: center;">May 2022</p>
     </div>
   </div>
-  <div class="item2">Hej
-
+  <div class="item2">
+    <div class="demo" style="overflow-x: hidden;">
+      <model-viewer camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/RoomsTape.glb" ar ios-src="3Dmodels/RoomsTape.usdz" alt="A 3D transparency test" style="background-color: unset;"></model-viewer>
+    </div>
   </div>
 </div>
 
